@@ -13,8 +13,8 @@ body {
 }
 header {
   padding: 50px;
-  margin-bottom: 20px;
-  background-image: url('https://media.istockphoto.com/photos/abstract-blurred-gradient-background-in-bright-colors-colorful-smooth-picture-id1071588902?k=6&m=1071588902&s=612x612&w=0&h=iVP_sZyBNVyHzT4qax2Mnpn2w7a6-PgJi1A8eVh4UYw=');
+  margin-bottom: 50px;
+  background-image: url('images/rainbow.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,8 +22,10 @@ header {
 h1 {
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
+  margin-bottom: 1px;
+  margin-top: 40px;
 }
 h2 {
   display: flex;
@@ -49,6 +51,10 @@ button {
   cursor: pointer;
   font-family: 'Overpass', sans-serif;
   border-color: lightgrey;
+  border: none;
+  border: thin solid;
+  border-color: rgb(214, 213, 213);
+  border-radius: 1rem;
 }
 
 .color {
@@ -73,7 +79,7 @@ footer {
   left: 0;
   right: 0;
   width: 100;
-  background-image: url('https://media.istockphoto.com/photos/abstract-blurred-gradient-background-in-bright-colors-colorful-smooth-picture-id1071588902?k=6&m=1071588902&s=612x612&w=0&h=iVP_sZyBNVyHzT4qax2Mnpn2w7a6-PgJi1A8eVh4UYw=');
+  background-image: url('images/rainbow.jpg');
   // background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

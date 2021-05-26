@@ -23,11 +23,7 @@ export class App extends Component {
         <header>
           <h1> color picker </h1>
         </header>
-        <h2>
-          <button onClick={this.handleNewColorButton}>
-            give me a random color
-          </button>
-        </h2>
+
         <section className="h">
           H: {this.state.hue}{' '}
           <input
@@ -87,7 +83,11 @@ export class App extends Component {
             }}
           ></div>
         </section>
-
+        <h2>
+          <button onClick={this.handleNewColorButton}>
+            give me a random color
+          </button>
+        </h2>
         <footer>
           <p>made by mary 2021</p>
         </footer>
