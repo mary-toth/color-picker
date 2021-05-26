@@ -2,9 +2,15 @@ import React, { Component } from 'react'
 
 export class App extends Component {
   state = {
-    hue: 40,
-    saturation: 93,
-    lightness: 74,
+    hue: Math.floor(Math.random() * 360),
+    saturation: Math.floor(Math.random() * 100),
+    lightness: Math.floor(Math.random() * 100),
+  }
+
+  handleNewColorButton = event => {
+    this.setState({ hue: Math.floor(Math.random() * 360) })
+    this.setState({ saturation: Math.floor(Math.random() * 100) })
+    this.setState({ lightness: Math.floor(Math.random() * 100) })
   }
 
   render() {
@@ -16,10 +22,12 @@ export class App extends Component {
         </style>
         <header>
           <h1> color picker </h1>
-          <h2>
-            <button>random color</button>
-          </h2>
         </header>
+        <h2>
+          <button onClick={this.handleNewColorButton}>
+            give me a random color
+          </button>
+        </h2>
         <section className="h">
           H: {this.state.hue}{' '}
           <input
@@ -68,8 +76,7 @@ export class App extends Component {
 
         <div className="color">
           {' '}
-          color: hsl {this.state.hue}, {this.state.saturation},{' '}
-          {this.state.lightness}
+          hsl {this.state.hue}, {this.state.saturation}, {this.state.lightness}
         </div>
 
         <section>
@@ -80,6 +87,10 @@ export class App extends Component {
             }}
           ></div>
         </section>
+
+        <footer>
+          <p>made by mary 2021</p>
+        </footer>
       </div>
     )
   }
